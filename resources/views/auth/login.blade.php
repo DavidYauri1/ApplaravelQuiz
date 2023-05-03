@@ -57,7 +57,7 @@
                             <small>{{ __('global.login_with') }}</small>
                         </div>
 
-                        <div class="btn-wrapper text-center">
+                        {{-- <div class="btn-wrapper text-center">
                             <a href="{{ route('auth.socialite', 'facebook') }}"
                                 class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
                                 type="button">
@@ -99,7 +99,7 @@
                                 </svg>
                                 Github
                             </a>
-                        </div>
+                        </div> --}}
 
                     </div>
                 </div>
