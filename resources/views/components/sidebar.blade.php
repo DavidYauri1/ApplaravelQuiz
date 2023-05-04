@@ -173,6 +173,15 @@
                             </a>
                         </li>
                     @endcan
+                    @can('client_access')
+                    <li class="items-center">
+                        <a class="{{ request()->is("clients*") ? "sidebar-nav-active" : "sidebar-nav" }}" href="{{ route("clients.index") }}">
+                            <i class="fa-fw c-sidebar-nav-icon fas fa-users">
+                            </i>
+                            {{ trans('cruds.client.title') }}
+                        </a>
+                    </li>
+                    @endcan
                     @can('test_access')
                         <li class="items-center">
                             <a class="{{ request()->is("tests*") ? "sidebar-nav-active" : "sidebar-nav" }}" href="{{ route("tests.index") }}">

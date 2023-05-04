@@ -100,4 +100,9 @@ class User extends Authenticatable implements HasLocalePreference
     {
         return $date->format('Y-m-d H:i:s');
     }
+
+    public function clients()
+    {
+    return $this->hasMany(Client::class);
+    }
 }

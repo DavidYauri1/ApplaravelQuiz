@@ -8,6 +8,7 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TopicController;
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ResultsController;
 use App\Http\Controllers\QuestionController;
@@ -51,6 +52,9 @@ Route::group(['middleware' => ['auth']], function () {
 
     // Comments
     Route::resource('comments', CommentController::class, ['except' => ['store', 'update', 'destroy']]);
+
+    //Clients
+    Route::resource('clients', ClientController::class, ['except' => ['store', 'update', 'destroy']]);
 });
 
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'middleware' => ['auth']], function () {

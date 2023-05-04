@@ -8,7 +8,7 @@
                 <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
                     <div class="rounded-t mb-0 px-6 py-6">
                         <div class="text-center mb-3">
-                            <h6 class="text-blueGray-500 text-sm font-bold">
+                            <h6 class="text-blueGray-500 text-xl font-bold">
                                 {{ __('global.login') }}
                             </h6>
                         </div>
@@ -46,16 +46,16 @@
                                     </span>
                                 </label>
                             </div>
-                            <div class="text-center mt-6">
+                            <div class="text-center mt-8">
                                 <button class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150">
                                     {{ __('global.login') }}
                                 </button>
                             </div>
                         </form>
 
-                        <div class="text-blueGray-400 text-center my-2 font-bold">
+                        {{-- <div class="text-blueGray-400 text-center my-2 font-bold">
                             <small>{{ __('global.login_with') }}</small>
-                        </div>
+                        </div> --}}
 
                         {{-- <div class="btn-wrapper text-center">
                             <a href="{{ route('auth.socialite', 'facebook') }}"
@@ -103,22 +103,22 @@
 
                     </div>
                 </div>
-                <div class="flex flex-wrap mt-6">
-                    <div class="w-1/2">
-                        @if(Route::has('password.request'))
-                            <a href="{{ route('password.request') }}" class="text-blueGray-200">
-                                <small>{{ __('global.forgot_password') }}</small>
-                            </a>
-                        @endif
-                    </div>
-                    <div class="w-1/2 text-right">
-                        @if(Route::has('register'))
-                            <a href="{{ route('register') }}" class="text-blueGray-200">
-                                <small>{{ __('global.register') }}</small>
-                            </a>
-                        @endif
-                    </div>
-                </div>
+                    {{-- <div class="flex flex-wrap mt-6">
+                        <div class="w-1/2">
+                            @if(Route::has('password.request'))
+                                <a href="{{ route('password.request') }}" class="text-blueGray-200">
+                                    <small>{{ __('global.forgot_password') }}</small>
+                                </a>
+                            @endif
+                        </div>
+                        <div class="w-1/2 text-right">
+                            @if(Route::has('register'))
+                                <a href="{{ route('register') }}" class="text-blueGray-200">
+                                    <small>{{ __('global.register') }}</small>
+                                </a>
+                            @endif
+                        </div>
+                    </div> --}}
             </div>
         </div>
     </div>
